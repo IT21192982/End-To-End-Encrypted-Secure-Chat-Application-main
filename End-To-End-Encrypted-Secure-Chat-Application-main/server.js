@@ -13,7 +13,11 @@ const cryptr = new Cryptr(
   "56dce7276d2b0a24e032beedf0473d743dbacf92aafe898e5a0f8d9898c9eae80a73798beed53489e8dbfd94191c1f28dc58cad12321d8150b93a2e092a744265fd214d7c2ef079e2f01b6d06319b7b2"
 );
 
-mongoose.connect("mongodb://localhost/chat_db");
+mongoose.connect("mongodb+srv://eranga:1995@cluster0.co48x0q.mongodb.net/?retryWrites=true&w=majority&appName=Cluster0", {
+  useNewUrlParser: true,
+  useUnifiedTopology: true
+});
+
 
 const {
   userJoin,
